@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Punk Donuts — Vegan grab-and-go</title>
+  <meta name='description' content='Austin-born vegan donuts and strong coffee. Out fast. Join the list for opening day.' />
+  <style>
+    :root { --bone:#F6F6F4; --black:#0D0D0D; --acid:#B7FF00; --r4:4px; --r12:12px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bone);color:var(--black);font:16px/1.5 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--black);padding:16px 0}
+    .logo{height:42px}
+    .badge{background:var(--acid);color:var(--black);padding:4px 8px;border-radius:var(--r4);font-weight:700;font-size:12px}
+    .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding:40px 0}
+    h1{font:800 48px/1 Inter, sans-serif;margin:0 0 12px 0;text-transform:uppercase}
+    p{font-size:18px;margin:0 0 8px 0}
+    .card{border:2px solid var(--black);background:#fff;padding:16px;border-radius:var(--r12);box-shadow:8px 8px 0 0 var(--black)}
+    .label{font:12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;opacity:.8}
+    .input{width:100%;padding:12px 14px;border:2px solid var(--black);border-radius:var(--r4);font-size:16px}
+    .button{background:var(--black);color:var(--bone);border:0;padding:12px 16px;border-radius:var(--r4);font-weight:700;cursor:pointer}
+    .button.acid{background:var(--acid);color:var(--black)}
+    .hero-img{width:100%;border:2px solid var(--black);border-radius:var(--r12);box-shadow:8px 8px 0 0 var(--black)}
+    .strap{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .footer{border-top:2px solid var(--black);padding:24px 0;font-size:12px;display:flex;justify-content:space-between;align-items:center}
+    .colors{display:flex;gap:12px}
+    .swatch{width:28px;height:28px;border-radius:50%;border:2px solid var(--black)}
+    @media(max-width:860px){.grid{grid-template-columns:1fr} h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div class='nav'>
+      <img class='logo' src='https://ljnung6dfgwtqv5w.public.blob.vercel-storage.com/ab98f97e-f401-461c-8d4a-4ac364b009c6/punk-logo-1763855226374.png' alt='PUNK DONUTS logo' />
+      <div class='badge'>Vegan • Grab & Go</div>
+    </div>
+
+    <section class='grid'>
+      <div>
+        <h1>Vegan donuts. Minimal fuss.</h1>
+        <p>Austin-born vegan donuts and strong coffee. Out fast. Join the list for opening day.</p>
+        <div class='strap'>
+          <span class='badge'>East Austin</span>
+          <span class='badge' style='background:#0D0D0D;color:#F6F6F4'>Opening Soon</span>
+        </div>
+        <div style='height:16px'></div>
+        <div class='card'>
+          <div class='label'>Join the waitlist</div>
+          <!-- Replace with Google Form embed iframe -->
+          <form onsubmit="alert('Thanks, you\'re on the list. We\'ll embed a Google Form next.'); return false;">
+            <input class='input' type='email' placeholder='your@email' required />
+            <div style='height:8px'></div>
+            <button class='button acid' type='submit'>Notify me</button>
+          </form>
+          <div class='label' style='opacity:.7'>We’ll replace this with a Google Form embed.</div>
+        </div>
+      </div>
+      <div>
+        <img class='hero-img' src='https://ljnung6dfgwtqv5w.public.blob.vercel-storage.com/ab98f97e-f401-461c-8d4a-4ac364b009c6/punk-hero-set-1763855254904.png' alt='Punk Donuts hero imagery' />
+      </div>
+    </section>
+
+    <section>
+      <div class='label'>Palette</div>
+      <div class='colors'>
+        <div class='swatch' title='bone' style='background:#F6F6F4'></div>
+        <div class='swatch' title='matte black' style='background:#0D0D0D'></div>
+        <div class='swatch' title='acid green' style='background:#B7FF00'></div>
+        <div class='swatch' title='blush' style='background:#FFC7C7'></div>
+      </div>
+    </section>
+
+    <div class='footer'>
+      <div class='label'>© Punk Donuts. Vegan, fast, and loud.</div>
+      <div class='label'>IG/TikTok: @handle</div>
+    </div>
+  </div>
+</body>
+</html>
